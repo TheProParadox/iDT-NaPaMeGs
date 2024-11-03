@@ -51,11 +51,14 @@ To run this project locally, follow these steps:
 
 3. **Run the app**:
     ## Inverse Design Tool
+   
     ```bash
     streamlit run odod.py
     ```
+    
     ## Forward Design Tool
-        ```bash
+   
+   ```bash
     streamlit run forward.py
     ```
 
