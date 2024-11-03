@@ -77,6 +77,9 @@ The app for the forward and inverse design can be directly accessed through the 
 ## Disclaimer
 We have choosen streamlit to host our app as it is easy to use and edit the interface. It has a downside that the site becomes inactive if no user visits site for 1month and the owner of the site has to reboot it from his side. If you need to access the site and it shows error in the future, do contact **bhavikchandna@gmail.com**.
 
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
+
 ## Acknowledgments
 
 This project was developed at IIT Guwahati as part of research into the design of photonic devices using metagrid-based nanostructures. Special thanks to National Supercomputing Mission (NSM) for their support.
