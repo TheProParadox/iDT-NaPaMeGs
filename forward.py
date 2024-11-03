@@ -8,7 +8,7 @@ from tensorflow import keras
 import random
 
 def actual_trss(n1,n2,height,radius,gap):
-    df = pd.read_csv('data_curation\sample_data\Ag_3_reduced.csv',low_memory=False)
+    df = pd.read_csv('data_curation/sample_data/Ag_3_reduced.csv',low_memory=False)
     
     if (10*n2) % 2 == 0:    
         n2 = n2 - 0.1
@@ -50,7 +50,7 @@ def predict_trss(n1, n2, height, radius, gap):
     for i in range(0,301):
         data[i][3] = (data[i][3]-700.0102603338136)/173.78230000960846
     X = pd.DataFrame(data)
-    loaded_model = tf.keras.models.load_model("regression-model-epoch-500-scaled.h5", compile = False)
+    loaded_model = tf.keras.models.load_model("model_weights/forward_final.h5", compile = False)
     new_predictions = loaded_model.predict(X)
 
     return new_predictions
@@ -68,7 +68,7 @@ st.markdown(
 )
 
 def inv(l,u):
-    df = pd.read_csv('data_curation\sample_data\Ag_3_reduced.csv',low_memory=False)
+    df = pd.read_csv('data_curation/sample_data/Ag_3_reduced.csv',low_memory=False)
     filtered_df = df[(df['lambda_val'] >= l) & (df['lambda_val'] <= u)]
     max_row = filtered_df.loc[filtered_df['Ts'].idxmax()]
 

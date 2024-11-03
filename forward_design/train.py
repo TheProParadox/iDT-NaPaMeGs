@@ -136,7 +136,7 @@ def main(input_file, input_cols, output_col, n_splits=5, epochs=50, batch_size=2
 
 if __name__ == "__main__":
     # Define paths and columns
-    input_file = '/scratch/napamegs/Ag_height0/Ag_3_reduced.csv'
+    input_file = '/scratch/napamegs/Ag_height0/Ag_3_reduced.csv' 
     input_cols = ['rad', 'gap', 'n2', 'lambda_val']
     output_col = ['Ts']
     
