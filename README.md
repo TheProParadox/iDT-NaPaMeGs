@@ -1,5 +1,7 @@
 # iDT-NaPaMeGs: Forward and Inverse Design Toolkit for Nanoparticle Metagrids
 
+### Maintained by Bhavik Chandna and Meghali Deka
+
 *iDT-NaPaMeGs* is an interactive application built with Streamlit for the inverse design of nanoparticle metagrid-based photonic devices. This toolkit leverages machine learning models to enable both forward and inverse design processes, optimizing MGS parameters to achieve specific optical properties, such as desired transmission and reflection spectra.
 
 ## Table of Contents
@@ -72,9 +74,8 @@ The app for the forward and inverse design can be directly accessed through the 
 - Forward Design Tool: https://forward-napamegs.streamlit.app
 - Inverse Design Tool: https://idt-napamegs.streamlit.app
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+## Disclaimer
+We have choosen streamlit to host our app as it is easy to use and edit the interface. It has a downside that the site becomes inactive if no user visits site for 1month and the owner of the site has to reboot it from his side. If you need to access the site and it shows error in the future, do contact **bhavikchandna@gmail.com**.
 
 ## Acknowledgments
 
