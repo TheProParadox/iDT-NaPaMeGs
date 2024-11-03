@@ -8,7 +8,7 @@ from tensorflow import keras
 import random
 
 def actual_trss(n1,n2,height,radius,gap):
-    df = pd.read_csv('data_curation/sample_data/Ag_3_reduced.csv',low_memory=False)
+    df = pd.read_csv('data_curation\sample_data\Ag_3_reduced.csv',low_memory=False)
 
     if int(radius) % 2 == 0:
         radius = int(radius-1)
@@ -58,7 +58,7 @@ st.markdown(
 )
 
 def inv(l,u):
-    df = pd.read_csv('data_curation/sample_data/Ag_3_reduced.csv',low_memory=False)
+    df = pd.read_csv('data_curation\sample_data\Ag_3_reduced.csv',low_memory=False)
     filtered_df = df[(df['lambda_val'] >= l) & (df['lambda_val'] <= u)]
     max_row = filtered_df.loc[filtered_df['Ts'].idxmax()]
 
