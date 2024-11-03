@@ -1,0 +1,9 @@
+Name: libecpg_compat
+Description: PostgreSQL libecpg_compat library
+Url: http://www.postgresql.org/
+Version: 11.13
+Requires: 
+Requires.private: libecpg libpgtypes
+Cflags: -I/home/proj/napamegs/postgres/include
+Libs: -L/home/proj/napamegs/postgres/lib -lecpg_compat
+Libs.private:  -lm

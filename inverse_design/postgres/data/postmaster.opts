@@ -1,0 +1,1 @@
+/home/proj/napamegs/postgres/bin/postgres "-D" "/home/proj/napamegs/postgres/data"

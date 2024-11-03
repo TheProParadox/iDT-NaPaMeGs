@@ -1,0 +1,9 @@
+Name: libecpg
+Description: PostgreSQL libecpg library
+Url: http://www.postgresql.org/
+Version: 11.13
+Requires: 
+Requires.private: libpq libpgtypes
+Cflags: -I/home/proj/napamegs/postgres/include
+Libs: -L/home/proj/napamegs/postgres/lib -lecpg
+Libs.private:  -lm
